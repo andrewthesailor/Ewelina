@@ -9,12 +9,13 @@ Prowadzacy: dr inz Piotr Witonski
 #define wielomiany_h
 
 #include <iostream>
-
+#include<cstdio>
+#include<iomanip>
+using namespace std;
 class wielomian
 {
-   public:
-   int w0, w1, w2, w3, w4;
 
+public:
 //konstruktory:
 wielomian();
 wielomian(int a, int b, int c, int d, int e);
@@ -29,8 +30,9 @@ wielomian operator* (const wielomian &a);
 wielomian operator*= (const wielomian &a);
 bool operator== (const wielomian &a);
 bool operator!= (const wielomian &a);
-friend ostream & operator<< (ostream &wyjscie,const wielomian &a);
+friend ostream & operator<<(ostream &wyjscie ,const wielomian &a);
 
+   int w0, w1, w2, w3, w4;
 };
 
 #endif

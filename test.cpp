@@ -16,8 +16,8 @@ int main()
 {
     string a1,b1,c1,d1,e1;
     int a2,b2,c2,d2,e2;
-    int w, opcja;
-    int blad=0;
+    int opcja;
+    //int blad=0;
     
     wielomian a,b;
     
@@ -150,18 +150,15 @@ while(opcja)
     }
     if(opcja==5)
     {
-       w=a+b;
-       cout<<w<<endl;
+      cout<<(a+b)<<endl;
     }
     if(opcja==6)
     {
-       w=a-b;
-       cout<<w<<endl;
+       cout<<(a-b)<<endl;
     }
     if(opcja==7)
     {
-       w=a*b;
-       cout<<w<<endl;
+       cout<<(a*b)<<endl;
     }
     
     cout<<endl<<"Wybierz opcje z powyzszych: ";
@@ -169,7 +166,5 @@ while(opcja)
     
 }
 cout<<"The end :("<<endl;
-    
-system ("pause");
 return 0;
 }

@@ -5,9 +5,8 @@ Autor: Ewelina Mularczyk
 Prowadzacy: dr inz Piotr Witonski
 */
 
-#include <iostream>
 #include "wielomiany.h"
-               
+using namespace std;     
 wielomian:: wielomian()
 {
    std::cout<<"Uruchomienie konstruktora"<<std::endl;
@@ -122,7 +121,7 @@ bool wielomian:: operator!= (const wielomian &a)
 }
 
 
-ostream & operator<< (ostream &wyjscie,const wielomian &a)
+ostream & operator<<(ostream &wyjscie,const wielomian &a)
 {
      wyjscie<<a.w4<<"*x^4";
      if(a.w3>=0) wyjscie<<"+";
